@@ -9,6 +9,6 @@ class NotificationApplicationTest {
     @Test
     void testMainDoesNotThrowException() {
         // Calling the main method should load the context without throwing an exception.
-        assertDoesNotThrow(() -> AuthenticationApplication.main(new String[]{}));
+        assertDoesNotThrow(() -> NotificationApplication.main(new String[]{}));
     }
 }
