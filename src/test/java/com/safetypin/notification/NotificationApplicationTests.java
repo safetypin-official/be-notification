@@ -1,13 +1,14 @@
 package com.safetypin.notification;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class NotificationApplicationTests {
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
-	@Test
-	void contextLoads() {
-	}
+class NotificationApplicationTest {
 
+    @Test
+    void testMainDoesNotThrowException() {
+        // Calling the main method should load the context without throwing an exception.
+        assertDoesNotThrow(() -> AuthenticationApplication.main(new String[]{}));
+    }
 }
